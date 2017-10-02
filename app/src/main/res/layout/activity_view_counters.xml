@@ -8,4 +8,10 @@
         android:id="@+id/counterList"
         android:layout_width="match_parent"
         android:layout_height="429dp" />
+
+    <Button
+        android:id="@+id/Back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Return to main page" />
 </LinearLayout>

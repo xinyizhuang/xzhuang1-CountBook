@@ -25,6 +25,15 @@ public class Counter {
 
     }
 
+    public Counter(String name, Date date, Integer ini_value, String comment){
+        this.name = name;
+        this.date = date;
+        this.ini_value = ini_value;
+        this.curr_value = ini_value;
+        this.comment = comment;
+
+    }
+
     /*Setter*/
     public void setName(String name){
         this.name = name;
@@ -83,5 +92,10 @@ public class Counter {
     /* reset */
     public void reset() {
         this.curr_value = this.ini_value;
+    }
+
+    @Override
+    public String toString() {
+        return getDate() + "\n" + name + "\n" + curr_value + "\n";
     }
 }
